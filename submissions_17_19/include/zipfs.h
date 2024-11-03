@@ -8,43 +8,66 @@
 #include <set>
 
 
-void computeWordFrequency(const std::vector<char>& book) {
-    int countUniqueWords(const std::vector<char>& book);
-}
+#include <vector>
+#include <map>
+#include <set>
+#include <string>
+#include <multimap>
 
-void readBook(std::string filename) {
+std::vector<char> readBook(const std::string& fileName);
+std::map<std::string, int> computeWordFrequency(const std::vector<char>& book);
+int countUniqueWords(const std::vector<char>& book);
+std::multimap<int, std::string, std::greater<>> sortFrequencies(const std::map<std::string, int>& frequencies);
+void outputFrequencies(const std::multimap<int, std::string>& sortedFreqs, const std::string& outputFile);
+
+#endif // ZIPFS_H
+
+
+
+
+
+
+
+
+
+
+// void computeWordFrequency(const std::vector<char>& book) {
+//     int countUniqueWords(const std::vector<char>& book);
+// }
+
+// void readBook(std::string filename) {
   
-    // open file for reading
-    std::ifstream istrm(filename);
+//     // open file for reading
+//     std::ifstream istrm(filename);
 
-    if (!istrm.is_open()) {
-        std::cout << "failed to open " << filename << '\n';
-    }
+//     if (!istrm.is_open()) {
+//         std::cout << "failed to open " << filename << '\n';
+//     }
     
-    else {
-        std::string line;
-        int line_count = 0;
-        while (std::getline(istrm, line)) 
-        {
-            line_count++;
-            std::istringstream iss(line);
-            std::string word;
-            while (iss >> word) {
+//     else {
+//         std::string line;
+//         int line_count = 0;
+//         while (std::getline(istrm, line)) 
+//         {
+//             line_count++;
+//             std::istringstream iss(line);
+//             std::string word;
+//             while (iss >> word) {
                 
-            }
+//             }
             
-        }
-        std::cout << "there are: " << line_count << " lines in this file" <<  std::endl;
-    }
-};
+//         }
+//         std::cout << "there are: " << line_count << " lines in this file" <<  std::endl;
+//     }
+// };
 
-int main() {
-    std::string moby_file = "moby_dick.txt";
-    std::vector<char> readBook(std::string fileName);
-    std::map<std::string, int> computeWordFrequency(readBook);
+// int main() {
+//     std::string moby_file = "moby_dick.txt";
+//     std::vector<char> readBook(std::string fileName);
+//     std::map<std::string, int> computeWordFrequency(readBook);
     
-    return 0;
-};
+//     return 0;
+// };
 
 
 

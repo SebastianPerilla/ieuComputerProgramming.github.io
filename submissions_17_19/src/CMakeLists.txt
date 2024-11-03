@@ -19,3 +19,8 @@ target_link_directories(main_zipfs_containers PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}
 
 add_executable(main_zipfs_algorithms main_zipfs_algorithms.cpp)
 target_include_directories(main_zipfs_algorithms PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src ${CMAKE_CURRENT_SOURCE_DIR}/include)
+
+
+
+add_executable(main_zipfs_containers main_zipfs_containers.cpp container_functions.cpp)
+add_executable(main_zipfs_algorithms main_zipfs_algorithms.cpp algorithm_functions.cpp)
