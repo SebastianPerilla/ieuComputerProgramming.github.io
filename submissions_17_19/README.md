@@ -16,15 +16,12 @@ cmake ..
 make
 
 ctest
-
 ```
-
 
 - This should run the relevant tests for each submission (also no zipbomb I think)
 
 
-
-### Doxygen 
+### Doxygen
 
 ```
 cd src

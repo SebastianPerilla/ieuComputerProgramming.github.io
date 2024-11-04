@@ -1,0 +1,5 @@
+if(EXISTS "/home/sebastianperilla/projects/cpp_programming/sessions/session_21/IEU_Computer_Programming/submissions_17_19/build/tests/test_split[1]_tests.cmake")
+  include("/home/sebastianperilla/projects/cpp_programming/sessions/session_21/IEU_Computer_Programming/submissions_17_19/build/tests/test_split[1]_tests.cmake")
+else()
+  add_test(test_split_NOT_BUILT test_split_NOT_BUILT)
+endif()
